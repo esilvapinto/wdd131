@@ -1,13 +1,13 @@
 :root {
-  --cor-primaria: #173f5f;
-  --cor-secundaria: #20639b;
-  --cor-destaque: #f6d55c;
-  --cor-fundo: #f4f7f9;
+  --cor-primaria: #1f567d;
+  --cor-secundaria: #2d2d2d;
+  --cor-destaque: #f2c14e;
+  --cor-fundo: #ffffff;
+  --cor-texto: #202124;
+  --cor-borda: #b8b8b8;
   --cor-clara: #ffffff;
-  --cor-texto: #202020;
-  --cor-borda: #c7d1d9;
 
-  --fonte-titulo: "Source Serif 4", Georgia, serif;
+  --fonte-titulo: "Montserrat", Arial, sans-serif;
   --fonte-corpo: "Roboto", Arial, sans-serif;
 }
 
@@ -33,6 +33,7 @@ header h1 {
   padding: 1.5rem;
   font-family: var(--fonte-titulo);
   font-size: 1.8rem;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -43,7 +44,8 @@ header span {
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: #111827;
+  align-items: center;
+  background-color: var(--cor-secundaria);
 }
 
 nav a {
@@ -51,34 +53,38 @@ nav a {
   flex: 1;
   padding: 1rem;
   color: var(--cor-clara);
+  font-size: 1.1rem;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   background-color: var(--cor-destaque);
-  color: #111827;
+  color: #17202a;
   text-decoration: underline;
 }
 
 main {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem;
 }
 
 main > h1 {
-  margin-bottom: 1.25rem;
-  color: var(--cor-primaria);
+  margin-bottom: 1.5rem;
+  color: var(--cor-texto);
   font-family: var(--fonte-titulo);
+  font-size: 2.2rem;
+  font-weight: 500;
   text-align: center;
 }
 
-.cartoes {
+.conteudo-principal {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 1.25rem;
+  gap: 1rem;
   align-items: stretch;
 }
 
@@ -86,55 +92,93 @@ main > h1 {
   overflow: hidden;
   background-color: var(--cor-clara);
   border: 1px solid var(--cor-borda);
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 12%);
 }
 
 .card h2 {
-  padding: 0.75rem;
-  background-color: var(--cor-secundaria);
+  padding: 0.75rem 1rem;
+  background-color: var(--cor-primaria);
   color: var(--cor-clara);
   font-family: var(--fonte-titulo);
+  font-size: 1.4rem;
   text-align: center;
 }
 
-.sobre-mim,
-.pais {
-  padding: 1.25rem;
+.sobre-mim {
+  padding: 1.5rem;
 }
 
-.sobre-mim img {
+.sobre-mim::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.sobre-mim p {
+  margin-bottom: 1rem;
+}
+
+.foto-perfil {
   float: right;
   width: 180px;
   height: auto;
-  margin: 0 0 1rem 1.25rem;
+  margin: 0 0 1rem 1.5rem;
   border: 1px solid var(--cor-borda);
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
-.sobre-mim p,
-.pais p {
-  margin-bottom: 1rem;
-}
-
-.pais figure {
-  margin-bottom: 1rem;
+.sobre-mim h3 {
+  clear: both;
+  width: 70%;
+  margin: 1.5rem auto 1rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--cor-borda);
+  font-family: var(--fonte-titulo);
+  font-size: 1.25rem;
   text-align: center;
 }
 
-.pais img {
+.informacoes-local {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.informacoes-local figure {
+  text-align: center;
+}
+
+.informacoes-local img {
   display: block;
   width: 100%;
-  max-width: 250px;
   height: auto;
-  margin: 0 auto;
   border: 1px solid var(--cor-borda);
 }
 
-.pais figcaption {
-  margin-top: 0.4rem;
+.informacoes-local figcaption {
+  margin-top: 0.5rem;
   font-size: 0.85rem;
   font-style: italic;
+}
+
+.recursos ul {
+  margin: 0;
+  padding: 3rem 2rem 2rem 4rem;
+}
+
+.recursos li {
+  margin-bottom: 0.7rem;
+}
+
+.recursos a {
+  color: #0645ad;
+}
+
+.recursos a:hover,
+.recursos a:focus {
+  color: #8b1a1a;
 }
 
 footer {
@@ -145,23 +189,44 @@ footer {
   text-align: center;
 }
 
+footer p {
+  margin: 0.2rem 0;
+}
+
 #ultimaModificacao {
   color: var(--cor-destaque);
   font-size: 0.9rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   nav {
     flex-direction: column;
   }
 
-  .cartoes {
+  nav a {
+    width: 100%;
+  }
+
+  .conteudo-principal {
     grid-template-columns: 1fr;
   }
 
-  .sobre-mim img {
+  .foto-perfil {
     float: none;
     display: block;
     margin: 0 auto 1rem;
+  }
+
+  .sobre-mim h3 {
+    width: 100%;
+  }
+
+  .informacoes-local {
+    grid-template-columns: 1fr;
+  }
+
+  .informacoes-local figure {
+    max-width: 250px;
+    margin: 0 auto;
   }
 }
