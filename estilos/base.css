@@ -11,6 +11,8 @@
   --fonte-corpo: "Roboto", Arial, sans-serif;
 }
 
+/* Configurações gerais */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,12 +26,18 @@ body {
   line-height: 1.6;
 }
 
+/* Cabeçalho */
+
 header {
   background-color: var(--cor-primaria);
   color: var(--cor-clara);
 }
 
-header h1 {
+header span {
+  display: block;
+}
+
+#course-title {
   padding: 1.5rem;
   font-family: var(--fonte-titulo);
   font-size: 1.8rem;
@@ -37,9 +45,7 @@ header h1 {
   text-align: center;
 }
 
-header span {
-  display: block;
-}
+/* Menu de navegação */
 
 nav {
   display: flex;
@@ -66,6 +72,8 @@ nav a:focus {
   text-decoration: underline;
 }
 
+/* Conteúdo principal */
+
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -81,12 +89,16 @@ main > h1 {
   text-align: center;
 }
 
+/* Organização dos cartões com CSS Grid */
+
 .conteudo-principal {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
   align-items: stretch;
 }
+
+/* Cartões */
 
 .card {
   overflow: hidden;
@@ -104,6 +116,8 @@ main > h1 {
   font-size: 1.4rem;
   text-align: center;
 }
+
+/* Cartão Sobre Mim */
 
 .sobre-mim {
   padding: 1.5rem;
@@ -139,6 +153,8 @@ main > h1 {
   text-align: center;
 }
 
+/* Informações sobre o Brasil */
+
 .informacoes-local {
   display: grid;
   grid-template-columns: 220px 1fr;
@@ -163,9 +179,16 @@ main > h1 {
   font-style: italic;
 }
 
+/* Cartão Recursos Web Dev */
+
+.recursos {
+  display: flex;
+  flex-direction: column;
+}
+
 .recursos ul {
-  margin: 0;
-  padding: 3rem 2rem 2rem 4rem;
+  margin: auto 0;
+  padding: 3rem 2rem 3rem 4rem;
 }
 
 .recursos li {
@@ -180,6 +203,8 @@ main > h1 {
 .recursos a:focus {
   color: #8b1a1a;
 }
+
+/* Rodapé */
 
 footer {
   margin-top: 1.5rem;
@@ -198,13 +223,23 @@ footer p {
   font-size: 0.9rem;
 }
 
-@media (max-width: 750px) {
+/* Ajustes para telas menores */
+
+@media screen and (max-width: 750px) {
+  #course-title {
+    font-size: 1.4rem;
+  }
+
   nav {
     flex-direction: column;
   }
 
   nav a {
     width: 100%;
+  }
+
+  main > h1 {
+    font-size: 1.8rem;
   }
 
   .conteudo-principal {
@@ -226,6 +261,7 @@ footer p {
   }
 
   .informacoes-local figure {
+    width: 100%;
     max-width: 250px;
     margin: 0 auto;
   }
