@@ -80,23 +80,23 @@ header {
 }
 
 #menu:focus-visible,
-.navigation a:focus-visible {
+nav a:focus-visible {
   outline: 3px solid var(--cor-destaque);
   outline-offset: 3px;
 }
 
-.navigation {
+nav {
   display: none;
   flex-direction: column;
   width: 100%;
   margin-top: 1rem;
 }
 
-.navigation.open {
+nav.open {
   display: flex;
 }
 
-.navigation a {
+nav a {
   display: block;
   padding: 0.9rem 1rem;
   color: var(--cor-clara);
@@ -106,7 +106,7 @@ header {
   font-weight: 600;
 }
 
-.navigation a:hover {
+nav a:hover {
   color: var(--cor-primaria);
   background-color: var(--cor-destaque);
 }
