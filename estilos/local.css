@@ -1,0 +1,193 @@
+:root {
+  --green: #006b3c;
+  --dark-green: #004c2a;
+  --yellow: #ffdf00;
+  --blue: #002776;
+  --white: #ffffff;
+  --text: #17211b;
+  --page-background: #dceede;
+  --card-background: rgb(255 255 255 / 92%);
+  --shadow: 0 4px 15px rgb(0 0 0 / 30%);
+  --heading-font: Arial, Helvetica, sans-serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  color: var(--text);
+  background-color: var(--page-background);
+  font-family: var(--body-font);
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+header {
+  padding: 1.6rem 1rem;
+  border-bottom: 10px solid var(--yellow);
+  color: var(--white);
+  background-color: var(--green);
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+}
+
+main {
+  background-color: var(--white);
+}
+
+.hero {
+  display: block;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card {
+  padding: 1.5rem 1rem;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  color: var(--blue);
+  font-size: 1.8rem;
+}
+
+.weather-icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+}
+
+dl {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+dl div {
+  display: grid;
+  grid-template-columns: minmax(135px, 1fr) 1.15fr;
+  gap: 0.75rem;
+  padding: 0.3rem 0;
+}
+
+dt {
+  font-weight: 700;
+  text-align: right;
+}
+
+dd {
+  margin: 0;
+  text-align: left;
+}
+
+footer {
+  padding: 1.2rem 1rem;
+  color: var(--white);
+  background-color: var(--dark-green);
+  text-align: center;
+}
+
+footer p {
+  margin: 0.35rem 0;
+}
+
+#last-modified {
+  color: var(--yellow);
+  font-size: 0.9rem;
+}
+
+/* Visualização para telas maiores */
+@media screen and (min-width: 800px) {
+  main {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero img {
+    width: 100%;
+    min-height: 620px;
+    max-height: 720px;
+    object-fit: cover;
+  }
+
+  .card {
+    position: absolute;
+    width: 340px;
+    padding: 0 1.25rem 1.4rem;
+    background-color: var(--card-background);
+    box-shadow: var(--shadow);
+  }
+
+  .card h2 {
+    position: relative;
+    left: -2rem;
+    width: calc(100% + 1rem);
+    margin: 0.8rem 0 1.2rem;
+    padding: 0.9rem 1.2rem;
+    color: var(--white);
+    background-color: var(--green);
+    text-align: left;
+  }
+
+  .data {
+    top: 2.5rem;
+    left: 2rem;
+  }
+
+  .weather {
+    right: 2rem;
+    bottom: 2.5rem;
+  }
+
+  .weather h2::after {
+    content: "⛅";
+    margin-left: 1rem;
+  }
+
+  .weather-icon {
+    display: none;
+  }
+}
+
+/* Ajuste para celulares pequenos */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  .card {
+    border-bottom: 1px solid #cccccc;
+  }
+
+  dl div {
+    grid-template-columns: minmax(125px, 1fr) 1fr;
+    gap: 0.5rem;
+  }
+}

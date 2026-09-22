@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Página responsiva com informações gerais e climáticas sobre o Brasil."
+    />
+    <meta name="author" content="Elias da Silva Pinto" />
+
+    <title>Brasil 22 | Página do País</title>
+
+    <link rel="stylesheet" href="estilos/local.css" />
+    <script src="scripts/local.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Brasil 22</h1>
+    </header>
+
+    <main>
+      <picture class="hero">
+        <source media="(min-width: 800px)" srcset="imagens/brasil-large.webp" />
+
+        <img
+          src="imagens/brasil-small.webp"
+          alt="Paisagem brasileira com montanhas, vegetação tropical e céu ensolarado"
+          width="800"
+          height="1000"
+        />
+      </picture>
+
+      <section class="card data" aria-labelledby="data-title">
+        <h2 id="data-title">Dados</h2>
+
+        <dl>
+          <div>
+            <dt>Área:</dt>
+            <dd>8.510.418 km²</dd>
+          </div>
+
+          <div>
+            <dt>População:</dt>
+            <dd>203.080.756</dd>
+          </div>
+
+          <div>
+            <dt>Capital:</dt>
+            <dd>Brasília</dd>
+          </div>
+
+          <div>
+            <dt>Idioma:</dt>
+            <dd>Português</dd>
+          </div>
+
+          <div>
+            <dt>Moeda:</dt>
+            <dd>Real brasileiro</dd>
+          </div>
+
+          <div>
+            <dt>Fuso horário:</dt>
+            <dd>UTC−2 a UTC−5</dd>
+          </div>
+
+          <div>
+            <dt>DDD internacional:</dt>
+            <dd>+55</dd>
+          </div>
+
+          <div>
+            <dt>Domínio:</dt>
+            <dd>.br</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="card weather" aria-labelledby="weather-title">
+        <h2 id="weather-title">Clima</h2>
+
+        <img
+          class="weather-icon"
+          src="imagens/weather-cloudy.svg"
+          alt="Tempo parcialmente nublado"
+          width="80"
+          height="80"
+        />
+
+        <dl>
+          <div>
+            <dt>Local:</dt>
+            <dd>Curitiba</dd>
+          </div>
+
+          <div>
+            <dt>Temperatura:</dt>
+            <dd><span id="temperature">8</span> °C</dd>
+          </div>
+
+          <div>
+            <dt>Condição:</dt>
+            <dd>Parcialmente nublado</dd>
+          </div>
+
+          <div>
+            <dt>Vento:</dt>
+            <dd><span id="wind-speed">12</span> km/h</dd>
+          </div>
+
+          <div>
+            <dt>Sensação térmica:</dt>
+            <dd><span id="wind-chill">N/A</span></dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="current-year"></span>
+        | Elias da Silva Pinto | Brasil
+      </p>
+
+      <p id="last-modified"></p>
+    </footer>
+  </body>
+</html>
