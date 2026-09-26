@@ -136,9 +136,11 @@ h1 {
 figure {
   overflow: hidden;
   margin: 0;
+  padding: 1rem;
   background-color: var(--cor-clara);
   border-radius: 8px;
   box-shadow: var(--sombra);
+  text-align: center;
 }
 
 figure img {
@@ -147,6 +149,7 @@ figure img {
   height: auto;
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 figcaption {
@@ -176,11 +179,6 @@ nav a[aria-current="page"] {
   background-color: var(--cor-destaque);
 }
 
-figure {
-  padding: 1rem;
-  text-align: center;
-}
-
 figure h2 {
   margin: 0 0 0.7rem;
   color: var(--cor-primaria);
@@ -195,8 +193,4 @@ figure h2 {
 
 .detalhes p {
   margin: 0.25rem 0;
-}
-
-figure img {
-  border-radius: 4px;
 }
