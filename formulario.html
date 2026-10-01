@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Elias Silva Pinto">
+  <meta name="description" content="Avalie seu produto: classificação, recursos úteis e sua experiência de uso.">
+  <title>Avaliação de produto | Elias Silva Pinto</title>
+  <link rel="stylesheet" href="estilos/formulario.css">
+  <script src="scripts/formulario.js" defer></script>
+</head>
+<body>
+  <header><p class="eyebrow">Sua experiência importa</p><h1>Avaliação de produto</h1></header>
+  <main>
+    <p class="intro">Conte como foi usar o produto. Campos com * são obrigatórios.</p>
+    <form method="get" action="avaliacao.html">
+      <label for="produto">Nome do produto <span aria-hidden="true">*</span></label>
+      <select id="produto" name="produto" required>
+        <option value="" disabled selected>Selecione um Produto...</option>
+      </select>
+      <fieldset>
+        <legend>Classificação geral <span aria-hidden="true">*</span></legend>
+        <p class="hint" id="rating-help">De 1 (insatisfeito) a 5 (muito satisfeito).</p>
+        <div class="ratings">
+          <div class="rating"><label for="nota-1"><span aria-hidden="true">☆</span><span class="sr-only">1 estrela</span></label><input type="radio" id="nota-1" name="classificacao" value="1" aria-describedby="rating-help" required></div>
+          <div class="rating"><label for="nota-2"><span aria-hidden="true">☆☆</span><span class="sr-only">2 estrelas</span></label><input type="radio" id="nota-2" name="classificacao" value="2" aria-describedby="rating-help" required></div>
+          <div class="rating"><label for="nota-3"><span aria-hidden="true">☆☆☆</span><span class="sr-only">3 estrelas</span></label><input type="radio" id="nota-3" name="classificacao" value="3" aria-describedby="rating-help" required></div>
+          <div class="rating"><label for="nota-4"><span aria-hidden="true">☆☆☆☆</span><span class="sr-only">4 estrelas</span></label><input type="radio" id="nota-4" name="classificacao" value="4" aria-describedby="rating-help" required></div>
+          <div class="rating"><label for="nota-5"><span aria-hidden="true">☆☆☆☆☆</span><span class="sr-only">5 estrelas</span></label><input type="radio" id="nota-5" name="classificacao" value="5" aria-describedby="rating-help" required></div>
+        </div>
+      </fieldset>
+      <label for="data-instalacao">Data de instalação <span aria-hidden="true">*</span></label>
+      <input type="date" id="data-instalacao" name="data-instalacao" required>
+      <fieldset>
+        <legend>Recursos úteis</legend>
+        <p class="hint">Marque todas as opções aplicáveis.</p>
+        <label class="check" for="durabilidade"><input type="checkbox" id="durabilidade" name="recursos" value="durabilidade"> Durabilidade</label>
+        <label class="check" for="facilidade"><input type="checkbox" id="facilidade" name="recursos" value="facilidade"> Facilidade de uso</label>
+        <label class="check" for="desempenho"><input type="checkbox" id="desempenho" name="recursos" value="desempenho"> Desempenho</label>
+        <label class="check" for="design"><input type="checkbox" id="design" name="recursos" value="design"> Design</label>
+      </fieldset>
+      <label for="avaliacao-escrita">Avaliação escrita <span class="optional">(opcional)</span></label>
+      <textarea id="avaliacao-escrita" name="avaliacao-escrita" rows="5" placeholder="O que funcionou bem? O que poderia melhorar?"></textarea>
+      <label for="usuario">Seu nome <span class="optional">(opcional)</span></label>
+      <input type="text" id="usuario" name="usuario" autocomplete="name">
+      <input type="submit" value="Enviar avaliação">
+    </form>
+  </main>
+  <footer>
+    <p>© <span id="currentyear"></span> • Elias Silva Pinto • Brasil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
