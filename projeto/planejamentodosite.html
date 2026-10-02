@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Planejamento do site ESP Consulting: finalidade, público, cenários, cores, tipografia e wireframes responsivos.">
+  <meta name="author" content="Elias Silva Pinto">
+  <title>Planejamento do Site | ESP Consulting</title>
+  <link rel="stylesheet" href="estilos/planejamentodosite.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="#nome" aria-label="ESP Consulting — nome do site"><span class="monogram" aria-hidden="true">ESP</span><span>ESP Consulting</span></a>
+    <p class="eyebrow">Planejamento do projeto • WDD131</p>
+    <h1>Supply Chain inteligente. Decisões melhores.</h1>
+    <p>Supply Chain e Inteligência Artificial aplicados aos desafios das empresas.</p>
+  </header>
+  <nav aria-label="Seções do planejamento"><a href="#nome">Nome</a><a href="#finalidade">Finalidade</a><a href="#cenarios">Cenários</a><a href="#cores">Cores</a><a href="#tipografia">Tipografia</a><a href="#wireframes">Wireframes</a></nav>
+  <main>
+    <section id="nome">
+      <p class="section-number">01 • Identidade</p>
+      <h2>Nome do site</h2>
+      <p><strong>ESP Consulting</strong> é o nome escolhido para a consultoria empresarial de Elias Silva Pinto. As iniciais conectam a marca ao consultor, enquanto “Consulting” expressa a atividade e permite apresentar os serviços a públicos de diferentes mercados.</p>
+      <p>O logotipo inicial combina um monograma ESP com o nome completo, transmitindo organização e clareza. O conteúdo do site será em português.</p>
+      <p>Domínio sugerido: <strong>espconsulting.com.br</strong>. A disponibilidade não foi verificada e a compra não faz parte desta atividade.</p>
+    </section>
+    <section id="finalidade">
+      <p class="section-number">02 • Direção</p>
+      <h2>Finalidade do site</h2>
+      <p>Apresentar os serviços da ESP Consulting e facilitar o contato de proprietários e gestores de pequenas empresas que precisam integrar sua cadeia de suprimentos e aplicar inteligência artificial para melhorar processos e decisões.</p>
+      <p>O visitante encontrará explicações dos serviços, exemplos ilustrativos de problemas atendidos e as etapas de trabalho: diagnóstico, plano de ação e acompanhamento. Um formulário permitirá solicitar uma conversa inicial.</p>
+      <h3>Público-alvo</h3>
+      <p>Empreendedores e gestores de pequenas e médias empresas que precisam integrar compras, fornecedores, estoques, demanda e distribuição ou identificar aplicações práticas de IA nas operações.</p>
+      <h3>Estrutura proposta</h3>
+      <ul>
+        <li><strong>Início:</strong> proposta de valor, apresentação do consultor, resumo dos serviços e convite para contato.</li>
+        <li><strong>Serviços:</strong> Supply Chain, Inteligência Artificial aplicada e gestão empresarial como área de apoio, com exemplos e etapas de atendimento.</li>
+        <li><strong>Contato:</strong> formulário com nome, e-mail, área de interesse e mensagem; confirmação após o preenchimento.</li>
+      </ul>
+      <p>O projeto acadêmico será um site estático. O formulário demonstrará validação e confirmação; o recebimento real de mensagens dependerá de uma integração futura.</p>
+      <h3>Conteúdo dos serviços</h3><ul><li><strong>Supply Chain:</strong> integração entre demanda, compras, fornecedores, estoques e distribuição; mapeamento de processos e indicadores.</li><li><strong>Inteligência Artificial:</strong> identificação de tarefas repetitivas, organização de dados e apoio à análise e à tomada de decisão, com revisão humana.</li><li><strong>Gestão empresarial:</strong> definição de prioridades, planos de ação e acompanhamento de resultados como suporte às duas áreas principais.</li></ul><h3>Interatividade planejada</h3>
+      <p>JavaScript terá funções distintas para o menu móvel, a exibição dos serviços, a filtragem por área e a confirmação do formulário. Os serviços serão representados por objetos em um array, usando métodos como filter e map. Eventos de clique, mudança e envio modificarão o DOM; condicionais tratarão filtros e validação. Todas as strings construídas para saída usarão template literals. O localStorage guardará a área de interesse selecionada e um contador de solicitações demonstrativas, sem armazenar dados pessoais.</p>
+    </section>
+    <section id="requisitos">
+      <p class="section-number">Implementação • Projeto final</p>
+      <h2>Requisitos de desenvolvimento e validação</h2>
+      <ul>
+        <li><strong>Páginas:</strong> index.html, servicos.html e contato.html, com navegação e identidade visual comuns. referencias.html reunirá créditos de imagens e textos externos e terá um link no rodapé de todas as páginas.</li>
+        <li><strong>Imagens:</strong> usar arquivos WebP ou AVIF dimensionados e comprimidos, com texto alternativo e dimensões explícitas. Imagens abaixo da primeira tela usarão loading="lazy"; a imagem principal será carregada normalmente.</li>
+        <li><strong>Formulário:</strong> rótulos associados, campos obrigatórios identificados, tipos apropriados, foco visível e botão com ação clara. A confirmação será demonstrativa, sem afirmar que uma mensagem foi enviada a um servidor.</li>
+        <li><strong>Responsividade:</strong> testar celular em retrato e paisagem e desktop, evitando rolagem horizontal e mantendo navegação por teclado.</li>
+        <li><strong>Qualidade:</strong> validar HTML e CSS, revisar ortografia, remover regras CSS sem uso, verificar o console e o contraste com CSS Overview.</li>
+        <li><strong>Testes:</strong> executar Lighthouse para Desempenho, Acessibilidade, Melhores Práticas e SEO em mobile e desktop; testar filtros, menu, formulário e persistência.</li>
+        <li><strong>Publicação:</strong> manter os arquivos no diretório projeto do repositório wdd131 e publicar pelo GitHub Pages.</li>
+      </ul>
+      <p>Este planejamento orienta o desenvolvimento; o site final terá conteúdo completo, sem espaços reservados e sem modelos de terceiros. O estudante deverá observar as regras de autoria e de assistência permitida pelo curso.</p>
+    </section>
+    <section id="cenarios">
+      <p class="section-number">03 • Necessidades do visitante</p>
+      <h2>Cenários</h2>
+      <ol>
+        <li>Minha empresa está crescendo, mas os processos estão desorganizados. Como a ESP Consulting pode ajudar a definir prioridades?</li>
+        <li>Como integrar compras, fornecedores, estoques e distribuição para reduzir rupturas e melhorar o atendimento aos clientes?</li>
+        <li>Quero usar inteligência artificial na minha empresa. Por onde começar e quais tarefas podem ser melhoradas?</li>
+        <li>Como funciona o diagnóstico inicial e como posso solicitar uma conversa com o consultor?</li>
+      </ol>
+    </section>
+    <section id="cores">
+      <p class="section-number">04 • Linguagem visual</p>
+      <h2>Esquema de cores</h2>
+      <p>A paleta transmite profissionalismo e mantém contraste entre textos, superfícies e ações. Estas cores já são usadas neste planejamento.</p>
+      <div class="table-wrap"><table>
+        <caption>Paleta e aplicação no site</caption>
+        <thead><tr><th scope="col">Cor</th><th scope="col">Código</th><th scope="col">Aplicação</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><span class="swatch navy" aria-hidden="true"></span>Azul-marinho</th><td>#17324D</td><td>Cabeçalho, rodapé e títulos.</td></tr>
+          <tr><th scope="row"><span class="swatch teal" aria-hidden="true"></span>Verde-petróleo</th><td>#14665F</td><td>Links, botões e destaques, com texto branco nos botões.</td></tr>
+          <tr><th scope="row"><span class="swatch light" aria-hidden="true"></span>Cinza claro</th><td>#F3F6F8</td><td>Fundo geral da página.</td></tr>
+          <tr><th scope="row"><span class="swatch white" aria-hidden="true"></span>Branco</th><td>#FFFFFF</td><td>Cartões e texto sobre fundos escuros.</td></tr>
+          <tr><th scope="row"><span class="swatch ink" aria-hidden="true"></span>Grafite</th><td>#243746</td><td>Parágrafos, listas e conteúdo principal.</td></tr>
+        </tbody>
+      </table></div>
+      <a class="button" href="#wireframes">Exemplo de botão: ver wireframes</a>
+    </section>
+    <section id="tipografia">
+      <p class="section-number">05 • Leitura</p>
+      <h2>Tipografia</h2>
+      <p><strong>Arial</strong> será a única família principal, aplicada em títulos, parágrafos, navegação e formulários. As alternativas serão Helvetica e sans-serif, caso Arial não esteja disponível.</p>
+      <p>Títulos usarão peso 700; textos, peso 400; e botões, peso 700. O corpo terá tamanho base de 18 pixels e entrelinha de 1,6 para facilitar a leitura em celular e desktop.</p>
+      <div class="type-example"><h3>Organize hoje. Cresça com clareza.</h3><p>Exemplo de texto: soluções práticas para melhorar a gestão e o funcionamento da sua empresa.</p></div>
+    </section>
+    <section id="wireframes">
+      <p class="section-number">06 • Organização da página inicial</p>
+      <h2>Wireframes</h2>
+      <p>Os diagramas representam a hierarquia do conteúdo. No celular, os blocos seguem uma coluna; em telas amplas, a apresentação terá duas colunas e os serviços ficarão lado a lado.</p>
+      <div class="wireframes">
+        <figure class="mobile"><h3>Visualização móvel</h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 790" role="img" aria-label="Wireframe móvel: cabeçalho, apresentação, botão, serviços empilhados, etapas, contato e rodapé."><title>Wireframe móvel: cabeçalho, apresentação, botão, serviços empilhados, etapas, contato e rodapé.</title><rect x="15" y="15" width="270" height="55" rx="5"/><text x="150.0" y="47.5" text-anchor="middle">ESP Consulting | Menu</text><rect x="15" y="85" width="270" height="140" rx="5"/><text x="150.0" y="160.0" text-anchor="middle">Título + proposta de valor</text><rect x="35" y="170" width="230" height="40" rx="5"/><text x="150.0" y="195.0" text-anchor="middle">Solicitar diagnóstico</text><rect x="15" y="240" width="270" height="70" rx="5"/><text x="150.0" y="280.0" text-anchor="middle">Apresentação da consultoria</text><rect x="15" y="325" width="270" height="60" rx="5"/><text x="150.0" y="360.0" text-anchor="middle">Serviço: Supply Chain</text><rect x="15" y="400" width="270" height="60" rx="5"/><text x="150.0" y="435.0" text-anchor="middle">Serviço: IA aplicada</text><rect x="15" y="475" width="270" height="60" rx="5"/><text x="150.0" y="510.0" text-anchor="middle">Serviço: Gestão empresarial</text><rect x="15" y="550" width="270" height="75" rx="5"/><text x="150.0" y="592.5" text-anchor="middle">Etapas do atendimento</text><rect x="15" y="640" width="270" height="60" rx="5"/><text x="150.0" y="675.0" text-anchor="middle">Convite para contato</text><rect x="15" y="715" width="270" height="55" rx="5"/><text x="150.0" y="747.5" text-anchor="middle">Rodapé + contatos</text></svg><figcaption>Menu compacto, serviços empilhados e botão de contato destacado.</figcaption></figure>
+        <figure class="desktop"><h3>Visualização desktop</h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 740" role="img" aria-label="Wireframe desktop: navegação horizontal, apresentação em duas colunas, três serviços lado a lado, etapas, contato e rodapé."><title>Wireframe desktop: navegação horizontal, apresentação em duas colunas, três serviços lado a lado, etapas, contato e rodapé.</title><rect x="20" y="20" width="760" height="55" rx="5"/><text x="400.0" y="52.5" text-anchor="middle">Logo ESP Consulting | Início | Serviços | Contato</text><rect x="20" y="95" width="460" height="170" rx="5"/><text x="250.0" y="185.0" text-anchor="middle">Título + proposta de valor</text><rect x="40" y="200" width="300" height="45" rx="5"/><text x="190.0" y="227.5" text-anchor="middle">Solicitar diagnóstico</text><rect x="500" y="95" width="280" height="170" rx="5"/><text x="640.0" y="185.0" text-anchor="middle">Imagem de apoio</text><rect x="20" y="285" width="760" height="65" rx="5"/><text x="400.0" y="322.5" text-anchor="middle">Apresentação da consultoria</text><rect x="20" y="370" width="240" height="100" rx="5"/><text x="140.0" y="425.0" text-anchor="middle">Supply Chain</text><rect x="280" y="370" width="240" height="100" rx="5"/><text x="400.0" y="425.0" text-anchor="middle">IA aplicada</text><rect x="540" y="370" width="240" height="100" rx="5"/><text x="660.0" y="425.0" text-anchor="middle">Gestão empresarial</text><rect x="20" y="490" width="760" height="70" rx="5"/><text x="400.0" y="530.0" text-anchor="middle">Diagnóstico → Plano → Acompanhamento</text><rect x="20" y="580" width="760" height="65" rx="5"/><text x="400.0" y="617.5" text-anchor="middle">Convite para contato + botão</text><rect x="20" y="665" width="760" height="55" rx="5"/><text x="400.0" y="697.5" text-anchor="middle">Rodapé | Contatos | Referências</text></svg><figcaption>Navegação horizontal, imagem de apoio e três cartões de serviços.</figcaption></figure>
+      </div>
+    </section>
+  </main>
+  <footer><p>ESP Consulting • Elias Silva Pinto • Brasil</p><p>Planejamento do site — WDD131 • 2026</p></footer>
+</body>
+</html>
