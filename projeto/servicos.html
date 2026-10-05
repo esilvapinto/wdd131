@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serviços de Supply Chain, IA aplicada e gestão empresarial da ESP Consulting para pequenas e médias empresas.">
+  <meta name="author" content="Elias Silva Pinto">
+  <meta name="theme-color" content="#17324d">
+  <title>Serviços | ESP Consulting</title>
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos/projeto.css">
+  <script src="scripts/projeto.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="ESP Consulting — página inicial">
+        <span class="monogram" aria-hidden="true">ESP</span>
+        <span class="brand-text">Consulting<small>Supply Chain &amp; IA</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="navegacao" aria-expanded="false" hidden>
+        <span class="menu-icon" aria-hidden="true"></span><span class="menu-label">Menu</span>
+      </button>
+      <nav id="navegacao" aria-label="Navegação principal">
+        <a href="index.html">Início</a><a href="servicos.html" aria-current="page">Serviços</a><a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="page-heading">
+      <div class="container">
+        <p class="eyebrow">Serviços</p>
+        <h1>Uma operação conectada. Um plano que faz sentido.</h1>
+        <p class="lead">Explore as áreas de atuação e identifique o apoio mais adequado ao momento da sua empresa.</p>
+      </div>
+    </section>
+
+    <section class="section compact" aria-labelledby="lista-titulo">
+      <div class="container">
+        <h2 id="lista-titulo" class="visually-hidden">Lista de serviços</h2>
+        <div class="filter-bar">
+          <div class="filter-field">
+            <label for="filtro-area">Filtrar por área</label>
+            <select id="filtro-area">
+              <option value="todos">Todas as áreas</option>
+              <option value="supply-chain">Supply Chain</option>
+              <option value="ia">Inteligência Artificial</option>
+              <option value="gestao">Gestão empresarial</option>
+            </select>
+          </div>
+          <p id="resultado-filtro" class="filter-status" role="status" aria-live="polite">6 serviços exibidos em todas as áreas.</p>
+        </div>
+        <div id="lista-servicos" class="service-grid">
+    <article class="service-card" id="diagnostico">
+      <p class="service-tag supply-chain">Supply Chain</p>
+      <h2>Diagnóstico da cadeia de suprimentos</h2>
+      <p>Uma visão integrada dos fluxos de compras, recebimento, estoque e distribuição para identificar os pontos que precisam de atenção.</p>
+      <h3>O que o trabalho pode incluir</h3>
+      <ul><li>Mapa dos processos atuais</li><li>Identificação de gargalos</li><li>Prioridades de melhoria</li></ul>
+      <a href="contato.html?area=supply-chain">Conversar sobre este serviço <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="service-card" id="estoques">
+      <p class="service-tag supply-chain">Supply Chain</p>
+      <h2>Estoques e planejamento</h2>
+      <p>Organização das informações e rotinas que apoiam o equilíbrio entre disponibilidade de produtos e recursos investidos em estoque.</p>
+      <h3>O que o trabalho pode incluir</h3>
+      <ul><li>Análise de itens e movimentações</li><li>Indicadores de estoque e atendimento</li><li>Rotina de revisão da demanda</li></ul>
+      <a href="contato.html?area=supply-chain">Conversar sobre este serviço <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="service-card" id="fornecedores">
+      <p class="service-tag supply-chain">Supply Chain</p>
+      <h2>Compras e fornecedores</h2>
+      <p>Estruturação de critérios e rotinas para acompanhar fornecedores, organizar compras e melhorar a previsibilidade do abastecimento.</p>
+      <h3>O que o trabalho pode incluir</h3>
+      <ul><li>Critérios de avaliação</li><li>Fluxo de compras documentado</li><li>Acompanhamento de prazos e entregas</li></ul>
+      <a href="contato.html?area=supply-chain">Conversar sobre este serviço <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="service-card" id="oportunidades-ia">
+      <p class="service-tag ia">Inteligência Artificial</p>
+      <h2>Mapeamento de oportunidades com IA</h2>
+      <p>Identificação de atividades em que a inteligência artificial pode apoiar a equipe, considerando os dados disponíveis e a necessidade de revisão humana.</p>
+      <h3>O que o trabalho pode incluir</h3>
+      <ul><li>Inventário de tarefas repetitivas</li><li>Priorização de casos de uso</li><li>Critérios para testar os resultados</li></ul>
+      <a href="contato.html?area=ia">Conversar sobre este serviço <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="service-card" id="piloto-ia">
+      <p class="service-tag ia">Inteligência Artificial</p>
+      <h2>Piloto de IA aplicada</h2>
+      <p>Desenvolvimento de um experimento com escopo definido, como apoio à organização de informações, preparação de relatórios ou análise inicial de dados.</p>
+      <h3>O que o trabalho pode incluir</h3>
+      <ul><li>Objetivo e limites do piloto</li><li>Fluxo de uso e revisão</li><li>Avaliação antes de ampliar o uso</li></ul>
+      <a href="contato.html?area=ia">Conversar sobre este serviço <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="service-card" id="gestao">
+      <p class="service-tag gestao">Gestão empresarial</p>
+      <h2>Plano de ação e indicadores</h2>
+      <p>Transformação do diagnóstico em ações organizadas, com responsáveis, prazos e uma rotina de acompanhamento compreensível para a equipe.</p>
+      <h3>O que o trabalho pode incluir</h3>
+      <ul><li>Plano de ação por prioridade</li><li>Definição de indicadores</li><li>Reuniões de acompanhamento</li></ul>
+      <a href="contato.html?area=gestao">Conversar sobre este serviço <span aria-hidden="true">→</span></a>
+    </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" aria-labelledby="ia-titulo">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">IA com propósito</p>
+          <h2 id="ia-titulo">Comece pelo problema. Depois, pela ferramenta.</h2>
+          <p>Antes de automatizar, é preciso entender a tarefa, a qualidade dos dados e o resultado esperado. Um piloto permite avaliar a utilidade da solução sem comprometer toda a operação.</p>
+          <p>O uso de IA considera a confidencialidade das informações e a revisão humana. Resultados importantes devem ser conferidos antes de orientar decisões.</p>
+        </div>
+        <img class="framed" src="imagens/inteligencia.svg" width="640" height="440" loading="lazy" decoding="async" alt="Ilustração de dados organizados, processamento e revisão de resultados por uma pessoa.">
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-titulo">
+      <div class="container narrow">
+        <p class="eyebrow">Perguntas frequentes</p>
+        <h2 id="faq-titulo">Antes de começar</h2>
+        <div class="faq">
+          <details><summary>Preciso ter uma grande empresa?</summary><p>Não. O trabalho é pensado para pequenas e médias empresas. O escopo depende da complexidade dos processos e das prioridades identificadas.</p></details>
+          <details><summary>É necessário contratar um sistema novo?</summary><p>Nem sempre. O diagnóstico considera os processos, as rotinas e as ferramentas que a empresa já utiliza antes de propor novas soluções.</p></details>
+          <details><summary>Como são definidos o prazo e o investimento?</summary><p>Após compreender o desafio, o escopo e as entregas, é possível definir uma proposta. Não há preço único para situações com necessidades diferentes.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-titulo">
+      <div class="container cta-grid">
+        <div>
+          <h2 id="cta-titulo">Vamos escolher a prioridade certa?</h2>
+          <p>Compartilhe o principal desafio da sua empresa.</p>
+        </div>
+        <a class="button" href="contato.html">Ir para contato</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <p class="footer-brand"><span class="monogram" aria-hidden="true">ESP</span>ESP Consulting</p>
+        <p>Supply Chain inteligente. Decisões melhores.</p>
+        <p class="footer-small">Consultoria para pequenas e médias empresas.</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <p class="footer-title">Navegação</p>
+        <ul class="footer-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="referencias.html">Referências e créditos</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-title">Contato direto</p>
+        <ul class="footer-list">
+          <li><a href="mailto:elias.pinto@hotmail.com">elias.pinto@hotmail.com</a></li>
+          <li><a href="https://wa.me/5548991358422">WhatsApp: +55 (48) 99135-8422</a></li>
+          <li><a href="https://www.linkedin.com/in/epinto-executivo/">LinkedIn: Elias Silva Pinto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© <span id="ano">2026</span> Elias Silva Pinto · Brasil</p>
+      <p id="ultima-atualizacao"></p>
+    </div>
+  </footer>
+</body>
+</html>

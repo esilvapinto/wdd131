@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apresente seu desafio em Supply Chain, IA ou gestão e fale com a ESP Consulting por WhatsApp ou e-mail.">
+  <meta name="author" content="Elias Silva Pinto">
+  <meta name="theme-color" content="#17324d">
+  <title>Contato | ESP Consulting</title>
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos/projeto.css">
+  <script src="scripts/projeto.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="ESP Consulting — página inicial">
+        <span class="monogram" aria-hidden="true">ESP</span>
+        <span class="brand-text">Consulting<small>Supply Chain &amp; IA</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="navegacao" aria-expanded="false" hidden>
+        <span class="menu-icon" aria-hidden="true"></span><span class="menu-label">Menu</span>
+      </button>
+      <nav id="navegacao" aria-label="Navegação principal">
+        <a href="index.html">Início</a><a href="servicos.html">Serviços</a><a href="contato.html" aria-current="page">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="page-heading">
+      <div class="container">
+        <p class="eyebrow">Contato</p>
+        <h1>Conte o seu desafio.</h1>
+        <p class="lead">Uma boa conversa começa com um contexto claro. Escolha o canal direto ou prepare sua mensagem pelo formulário.</p>
+      </div>
+    </section>
+
+    <section class="section compact" aria-label="Formas de contato">
+      <div class="container contact-grid">
+        <aside class="contact-aside">
+          <div class="contact-card">
+            <p class="eyebrow">Contato direto com Elias</p>
+            <ul class="direct-links">
+            <li><a class="direct-link" href="mailto:elias.pinto@hotmail.com"><span class="direct-label">E-mail</span>elias.pinto@hotmail.com</a></li>
+            <li><a class="direct-link" href="https://wa.me/5548991358422"><span class="direct-label">WhatsApp</span>+55 (48) 99135-8422</a></li>
+            <li><a class="direct-link" href="https://www.linkedin.com/in/epinto-executivo/"><span class="direct-label">LinkedIn</span>Perfil de Elias Silva Pinto</a></li>
+          </ul>
+          </div>
+          <h2>O que vale compartilhar?</h2>
+          <p>Descreva a situação atual, a dificuldade que precisa resolver e o que espera melhorar.</p>
+          <ul class="check-list">
+            <li>Processos de compras e fornecedores</li>
+            <li>Estoques e planejamento da demanda</li>
+            <li>Aplicações de IA e tarefas repetitivas</li>
+            <li>Organização da gestão e indicadores</li>
+          </ul>
+        </aside>
+
+        <form id="form-contato" class="contact-form" action="confirmacao.html" method="post" novalidate>
+          <h2>Apresente sua necessidade</h2>
+          <ol class="form-steps" aria-label="Como funciona">
+            <li>Preencha os campos</li>
+            <li>Revise a mensagem</li>
+            <li>Confirme o envio no WhatsApp</li>
+          </ol>
+          <noscript>
+            <p class="notice">O formulário precisa de JavaScript para preparar a mensagem. Sem ele, use o e-mail ou o WhatsApp em “Contato direto com Elias”. Nenhum dado é enviado por este formulário.</p>
+          </noscript>
+          <fieldset id="campos-contato" disabled>
+            <legend class="visually-hidden">Dados para preparar a mensagem</legend>
+            <p class="muted">Campos com * são obrigatórios.</p>
+            <div class="field-row">
+              <div class="field">
+                <label for="nome">Nome *</label>
+                <input id="nome" name="nome" type="text" required autocomplete="name" maxlength="100">
+              </div>
+              <div class="field">
+                <label for="email">E-mail *</label>
+                <input id="email" name="email" type="email" required autocomplete="email" maxlength="180">
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="empresa">Empresa <span class="optional">(opcional)</span></label>
+                <input id="empresa" name="empresa" type="text" autocomplete="organization" maxlength="120">
+              </div>
+              <div class="field">
+                <label for="area">Área de interesse *</label>
+                <select id="area" name="area" required>
+                  <option value="" disabled selected>Selecione uma área...</option>
+                  <option value="supply-chain">Supply Chain</option>
+                  <option value="ia">Inteligência Artificial</option>
+                  <option value="gestao">Gestão empresarial</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="mensagem">Qual é o seu desafio? *</label>
+              <textarea id="mensagem" name="mensagem" rows="6" required minlength="10" maxlength="2000" aria-describedby="mensagem-ajuda"></textarea>
+              <p id="mensagem-ajuda" class="field-help"><span>Mínimo de 10 caracteres. Não inclua informações confidenciais.</span> <span id="mensagem-contagem">0/2000</span></p>
+            </div>
+            <label class="check" for="ciencia"><input type="checkbox" id="ciencia" name="ciencia" value="sim" required>Concordo em usar os dados preenchidos para preparar minha mensagem de contato. *</label>
+            <button class="button full" type="submit">Preparar mensagem de contato</button>
+          </fieldset>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <p class="footer-brand"><span class="monogram" aria-hidden="true">ESP</span>ESP Consulting</p>
+        <p>Supply Chain inteligente. Decisões melhores.</p>
+        <p class="footer-small">Consultoria para pequenas e médias empresas.</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <p class="footer-title">Navegação</p>
+        <ul class="footer-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="referencias.html">Referências e créditos</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-title">Contato direto</p>
+        <ul class="footer-list">
+          <li><a href="mailto:elias.pinto@hotmail.com">elias.pinto@hotmail.com</a></li>
+          <li><a href="https://wa.me/5548991358422">WhatsApp: +55 (48) 99135-8422</a></li>
+          <li><a href="https://www.linkedin.com/in/epinto-executivo/">LinkedIn: Elias Silva Pinto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© <span id="ano">2026</span> Elias Silva Pinto · Brasil</p>
+      <p id="ultima-atualizacao"></p>
+    </div>
+  </footer>
+</body>
+</html>

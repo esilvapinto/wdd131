@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Revise sua mensagem de contato e confirme o envio para a ESP Consulting pelo WhatsApp.">
+  <meta name="author" content="Elias Silva Pinto">
+  <meta name="theme-color" content="#17324d">
+  <title>Confirmação | ESP Consulting</title>
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos/projeto.css">
+  <script src="scripts/projeto.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="ESP Consulting — página inicial">
+        <span class="monogram" aria-hidden="true">ESP</span>
+        <span class="brand-text">Consulting<small>Supply Chain &amp; IA</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="navegacao" aria-expanded="false" hidden>
+        <span class="menu-icon" aria-hidden="true"></span><span class="menu-label">Menu</span>
+      </button>
+      <nav id="navegacao" aria-label="Navegação principal">
+        <a href="index.html">Início</a><a href="servicos.html">Serviços</a><a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="section">
+      <div class="container narrow confirmation">
+        <ol class="form-steps progress" id="etapas-contato" aria-label="Etapas do contato">
+          <li>Preencher o formulário</li>
+          <li>Revisar a mensagem</li>
+          <li>Confirmar no WhatsApp</li>
+        </ol>
+        <p class="eyebrow">ESP Consulting</p>
+        <h1 id="confirmacao-titulo" tabindex="-1">Nenhuma mensagem preparada.</h1>
+        <p id="confirmacao-texto" class="lead">Volte ao formulário para preparar uma mensagem ou use os contatos diretos no rodapé.</p>
+
+        <div class="message-preview" id="preview-container" hidden>
+          <div class="preview-head">
+            <h2>Sua mensagem</h2>
+            <p id="confirmacao-area" class="area-chip"></p>
+            <p class="muted">Será aberta no WhatsApp para Elias: +55 (48) 99135-8422</p>
+          </div>
+          <pre id="preview-mensagem"></pre>
+          <p id="aviso-tamanho" class="notice warning" hidden></p>
+          <div class="actions">
+            <a id="enviar-whatsapp" class="button" href="https://wa.me/5548991358422">Abrir WhatsApp e revisar mensagem</a>
+            <button id="copiar-mensagem" class="button secondary" type="button">Copiar mensagem</button>
+            <button id="descartar-mensagem" class="link-button" type="button">Descartar mensagem</button>
+          </div>
+          <p id="acao-status" class="muted" role="status"></p>
+        </div>
+
+        <div class="notice">
+          <p id="contador-texto">Contatos preparados neste navegador: <strong id="contador">0</strong></p>
+          <p>O envio ocorre somente depois que você confirmar no WhatsApp. Este site não recebe nem verifica a entrega da mensagem.</p>
+        </div>
+        <p id="armazenamento-aviso" class="muted"></p>
+
+        <div class="actions">
+          <a class="button secondary" href="contato.html">Voltar ao formulário</a>
+          <a class="text-link" href="index.html">Página inicial <span aria-hidden="true">→</span></a>
+        </div>
+        <noscript><p class="notice">Ative o JavaScript para ver a confirmação, ou use os contatos diretos no rodapé.</p></noscript>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <p class="footer-brand"><span class="monogram" aria-hidden="true">ESP</span>ESP Consulting</p>
+        <p>Supply Chain inteligente. Decisões melhores.</p>
+        <p class="footer-small">Consultoria para pequenas e médias empresas.</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <p class="footer-title">Navegação</p>
+        <ul class="footer-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="referencias.html">Referências e créditos</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-title">Contato direto</p>
+        <ul class="footer-list">
+          <li><a href="mailto:elias.pinto@hotmail.com">elias.pinto@hotmail.com</a></li>
+          <li><a href="https://wa.me/5548991358422">WhatsApp: +55 (48) 99135-8422</a></li>
+          <li><a href="https://www.linkedin.com/in/epinto-executivo/">LinkedIn: Elias Silva Pinto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© <span id="ano">2026</span> Elias Silva Pinto · Brasil</p>
+      <p id="ultima-atualizacao"></p>
+    </div>
+  </footer>
+</body>
+</html>
